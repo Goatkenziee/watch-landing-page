@@ -1,89 +1,106 @@
-import Image from "next/image";
-
 export default function Home() {
   return (
-    <div className="min-h-screen bg-gray-900 text-white">
-      {/* Hero Section */}
-      <section className="relative h-screen flex items-center justify-center text-center">
-        <Image
-          src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-          alt="Luxury Watch"
-          fill
-          style={{ objectFit: "cover" }}
-          className="absolute inset-0 z-0 opacity-50"
-        />
-        <div className="relative z-10 p-4">
-          <h1 className="text-5xl md:text-7xl font-bold mb-4 leading-tight">
-            Timeless Elegance for Your Wrist
-          </h1>
-          <p className="text-xl md:text-2xl mb-8">
-            Discover our exquisite collection of luxury watches.
+    <main className="flex min-h-screen flex-col items-center justify-between p-24 bg-gray-900 text-white">
+      <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
+        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
+          Get started by editing&nbsp;
+          <code className="font-mono font-bold">app/page.tsx</code>
+        </p>
+        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:size-auto lg:bg-none">
+          <a
+            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
+            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            By{" "}
+            <img
+              src="/vercel.svg"
+              alt="Vercel Logo"
+              className="dark:invert"
+              width={100}
+              height={24}
+              priority
+            />
+          </a>
+        </div>
+      </div>
+
+      <div className="relative z-[-1] flex place-items-center before:absolute before:h-[300px] before:w-full before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 sm:before:w-[480px] sm:after:w-[240px] before:lg:h-[360px]">
+        <h1 className="text-6xl font-bold text-center">
+          Modern Watch Landing Page
+        </h1>
+      </div>
+
+      <div className="mb-32 grid text-center lg:mb-0 lg:w-full lg:max-w-5xl lg:grid-cols-4 lg:text-left">
+        <a
+          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
+          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <h2 className="mb-3 text-2xl font-semibold">
+            Docs{" "}
+            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
+              -&gt;
+            </span>
+          </h2>
+          <p className="m-0 max-w-[30ch] text-sm opacity-50">
+            Find in-depth information about Next.js features and API.
           </p>
-          <button className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-full text-lg transition duration-300">
-            Shop Now
-          </button>
-        </div>
-      </section>
+        </a>
 
-      {/* Features Section */}
-      <section className="py-20 px-4">
-        <h2 className="text-4xl font-bold text-center mb-12">Our Collection</h2>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-          <div className="bg-gray-800 p-8 rounded-lg shadow-lg text-center">
-            <Image
-              src="https://images.unsplash.com/photo-1539874754762-5a969b6aba53?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-              alt="Classic Watch"
-              width={300}
-              height={300}
-              className="mx-auto mb-6 rounded-lg"
-            />
-            <h3 className="text-2xl font-semibold mb-4">Classic Designs</h3>
-            <p className="text-gray-400">
-              Embrace tradition with our timeless and elegant classic watch designs.
-            </p>
-          </div>
-          <div className="bg-gray-800 p-8 rounded-lg shadow-lg text-center">
-            <Image
-              src="https://images.unsplash.com/photo-1548170274-130386260170?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-              alt="Sport Watch"
-              width={300}
-              height={300}
-              className="mx-auto mb-6 rounded-lg"
-            />
-            <h3 className="text-2xl font-semibold mb-4">Sporty & Durable</h3>
-            <p className="text-gray-400">
-              Engineered for performance and durability, perfect for the active lifestyle.
-            </p>
-          </div>
-          <div className="bg-gray-800 p-8 rounded-lg shadow-lg text-center">
-            <Image
-              src="https://images.unsplash.com/photo-1577749440700-47b856e9c606?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-              alt="Modern Watch"
-              width={300}
-              height={300}
-              className="mx-auto mb-6 rounded-lg"
-            />
-            <h3 className="text-2xl font-semibold mb-4">Modern Innovations</h3>
-            <p className="text-gray-400">
-              Cutting-edge design and technology for the contemporary connoisseur.
-            </p>
-          </div>
-        </div>
-      </section>
+        <a
+          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
+          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <h2 className="mb-3 text-2xl font-semibold">
+            Learn{" "}
+            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
+              -&gt;
+            </span>
+          </h2>
+          <p className="m-0 max-w-[30ch] text-sm opacity-50">
+            Learn about Next.js in an interactive course with&nbsp;quizzes!
+          </p>
+        </a>
 
-      {/* Call to Action */}
-      <section className="bg-blue-600 text-white py-20 px-4 text-center">
-        <h2 className="text-4xl font-bold mb-6">Find Your Perfect Timepiece</h2>
-        <p className="text-xl mb-8">Explore our diverse range and elevate your style.</p>
-        <button className="bg-white text-blue-600 hover:bg-gray-100 font-bold py-3 px-8 rounded-full text-lg transition duration-300">
-          View All Watches
-        </button>
-      </section>
+        <a
+          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
+          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <h2 className="mb-3 text-2xl font-semibold">
+            Templates{" "}
+            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
+              -&gt;
+            </span>
+          </h2>
+          <p className="m-0 max-w-[30ch] text-sm opacity-50">
+            Discover and deploy boilerplate example Next.js projects.
+          </p>
+        </a>
 
-      {/* Footer */}
-      <footer className="bg-gray-950 py-10 text-center text-gray-500">
-        <p>&copy; 2024 Luxury Watches. All rights reserved.</p>
-      </footer>
-    </div>
+        <a
+          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
+          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <h2 className="mb-3 text-2xl font-semibold">
+            Deploy{" "}
+            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
+              -&gt;
+            </span>
+          </h2>
+          <p className="m-0 max-w-[30ch] text-balance text-sm opacity-50">
+            Instantly deploy your Next.js site to a shareable URL with Vercel.
+          </p>
+        </a>
+      </div>
+    </main>
   );
 }
