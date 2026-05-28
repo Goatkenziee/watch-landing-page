@@ -5,8 +5,8 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Watch Landing Page",
-  description: "Modern landing page for selling watches",
+  title: "Modern Watch Landing Page",
+  description: "A sleek and modern landing page to sell watches.",
 };
 
 export default function RootLayout({
