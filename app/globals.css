@@ -1,14 +1,3 @@
-/* @tailwind base; */
-/* @tailwind components; */
-/* @tailwind utilities; */
-
-@layer base {
-  :root {
-    --background-start: #ffffff;
-    --background-end: #ffffff;
-  }
-  body {
-    background-color: theme('colors.white');
-    background-image: linear-gradient(to bottom, var(--background-start), var(--background-end));
-  }
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;

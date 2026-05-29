@@ -1,2 +1,3 @@
-# watch-landing-page
-A modern landing page to sell watches, built with Next.js, TypeScript, and Tailwind CSS.
+# Watch Landing Page
+
+A modern landing page for selling watches, built with Next.js, TypeScript, and Tailwind CSS.
