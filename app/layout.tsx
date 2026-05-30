@@ -1,22 +1,20 @@
-import type { Metadata } from 'next';
-import { Inter } from 'next/font/google';
-import './globals.css';
+import React from 'react';
+import '../globals.css';
 
-const inter = Inter({ subsets: ['latin'] });
-
-export const metadata: Metadata = {
-  title: 'Watch Landing Page',
-  description: 'A modern landing page for selling watches',
+type LayoutProps = {
+  children: React.ReactNode;
 };
 
-export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+const Layout: React.FC<LayoutProps> = ({ children }) => {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <head>
+        <title>Watch Landing Page</title>
+        <meta name="description" content="Find your perfect watch on our landing page!" />
+      </head>
+      <body>{children}</body>
     </html>
   );
-}
+};
+
+export default Layout;
